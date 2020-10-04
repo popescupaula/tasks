@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main{
+    public  static class House{
+        String name;
+        int floor_nr;
+        String color;
+        Boolean balcony;
+    }
+
+    public static void main(String[] args) {
+        House[] house = new House[2];
+        house[0] = new House();
+        house[0].name = "HOME1";
+        house[0].floor_nr = 4;
+        house[0].color = "White";
+        house[0].balcony = Boolean.TRUE;
+
+        house[1] = new House();
+        house[1].name = "HOME2";
+        house[1].floor_nr = 3;
+        house[1].color = "Grey";
+        house[1].balcony = Boolean.FALSE;
+
+        System.out.println("Name: "+ house[0].name + "\r\n" + "No. of floors: " + house[0].floor_nr + "\r\n" + "Color: "
+                + house[0].color + "\r\n" + "Balcony: " + house[0].balcony);
+
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Press enter to create a new object of this type");
+        String response = myObj.nextLine();
+
+        if (response.equals(" ")) {
+            System.out.println("Name: " + house[1].name + "\r\n" + "No. of floors: " + house[1].floor_nr + "\r\n" + "Color: "
+                    + house[1].color + "\r\n" + "Balcony: " + house[1].balcony);
+        }
+
+    }
+}

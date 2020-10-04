@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Popup Page</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#popup" class="popup-button">Popup Here</a>
+<section class="popup" id="popup">
+    <div class="popup-box">
+        <div class="popup-content">
+            <a href="#" class="popup-close-button">&times;</a>
+            <h2 class="popup-title">Popup Title</h2>
+            <p class="popup-paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aperiam eligendi voluptatum excepturi neque ad eaque nemo debitis ipsam dicta. Minima, iure nulla? Deleniti veritatis expedita provident accusamus atque molestias!</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>
